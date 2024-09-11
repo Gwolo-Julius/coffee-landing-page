@@ -26,6 +26,7 @@
   --white-clr: #fff;
   --review-clr: #0a424f;
   --coral-clr: #e73e00;
+
   /*@@@@@@@@@@@ z-index @@@@@@@@@@@ */
   --z-index-fixed: 100;
   --z-index-tooltip: 120;
@@ -35,6 +36,10 @@
 body {
   /* font-family: "Inter", sans-serif; */
   font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 section {
@@ -85,7 +90,7 @@ section {
   top: 0;
   height: 100%;
   padding-block: 8rem;
-  bottom: 0;
+  /* bottom: 100%; */
   left: -100%;
   background-color: var(--primary-clr);
   z-index: var(--z-index-fixed);
@@ -176,23 +181,67 @@ section {
   /* z-index: -1; */
 }
 .hero {
-  z-index: 1;
+  z-index: 100;
 }
 .hero__info {
   font-family: "Pompiere", sans-serif;
   color: var(--white-clr);
   font-size: 3rem;
+  z-index: 100;
+
 }
 
 .hero__para {
   font-family: "Galada", cursive;
   color: var(--white-clr);
   font-size: 1.1rem;
+  z-index: 100;
+
+}
+/* @@@@@@@@@@ About Querries @@@@@@@@@@ */
+.about {
+  background-color: var(--secondary-clr);
+}
+
+.about__heading {
+  color: var(--heading-clr);
+  font-size: 1.8rem;
+}
+
+.about__button {
+  color: var(--white-clr);
+  background-color: var(--heading-clr);
+  padding: 0.7rem 1.8rem;
+  border-radius: 0.3rem;
+  margin-top: 2rem;
+  transition: var(--tran);
+}
+
+.about__button:hover {
+  background-color: var(--primary-clr);
+}
+.about__container {
+  /* background-color: #ffa500; */
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about__left img {
+  width: 100%;
+}
+
+.about__right p {
+  font-family: "Pompiere", sans-serif;
+  font-size: 1.2rem;
+  padding: 1.5rem 0;
 }
 /* @@@@@@@@@@ Media Querries @@@@@@@@@@ */
 @media screen and (min-width: 800px) {
   .container {
-    width: 75%;
+    width: 78%;
     max-width: 1440px;
   }
   .hambuger {
@@ -243,4 +292,17 @@ section {
   .hero__para {
     font-size: 1.3rem;
   }
+
+  .about__right p {
+    font-size: 1.4rem;
+    padding: 2rem 0;
+  }
+
+  .about__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about__heading {
+  /* color: var(--heading-clr); */
+  font-size: 2.2rem;
+}
 }
