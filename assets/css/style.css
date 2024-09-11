@@ -1,0 +1,30 @@
+/*======= Google fonts====== */
+@import url("https://fonts.googleapis.com/css2?family=Pompiere&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Galada&family=Pompiere&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Galada&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pompiere&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Galada&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pompiere&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-clr: #2f1f14;
+  --secondary-clr: #dbbca1;
+  --tertiary-clr: #655546;
+  --heading-clr: #220404;
+  --white-clr: #fff;
+  --review-clr: #0a424f;
+}
+body {
+  /* font-family: "Pompiere", sans-serif; */
+  /* font-family: "Inter", sans-serif; */
+  /* font-family: "Galada", cursive; */
+    font-family: "Poppins", sans-serif;
+
+}
