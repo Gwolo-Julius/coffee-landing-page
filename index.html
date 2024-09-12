@@ -7,18 +7,25 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!--=============== REMIX ICONS ===============-->
+
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <!--=============== SWIPER CSS ===============-->
+
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <title>Coffee Landing Page</title>
+    <!--=============== CSS ===============-->
+
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="assets/js/main.js" defer></script>
   </head>
   <body>
     <header class="header">
       <div class="header__container container">
-        <a href="/">
+        <a href="#home">
           <div class="logo">
             <img src="assets/img/my-logo.png" alt="" />
           </div>
@@ -35,7 +42,7 @@
               <a href="#reviews" class="nav__link">Reviews</a>
             </li>
             <li class="nav__items">
-              <a href="#home" class="nav__link">Contact Us</a>
+              <a href="#contact" class="nav__link">Contact Us</a>
             </li>
           </ul>
           <div class="close">
@@ -48,7 +55,7 @@
       </div>
     </header>
     <!-- @@@@@@@@@ Hero Section @@@@@@@@@@ -->
-    <section class="hero__section">
+    <section class="hero__section" id="home">
       <img src="assets/img/hero-img.png" alt="" class="hero__img" />
       <div class="hero container">
         <h1 class="hero__info">Coffee Makes Mood</h1>
@@ -78,5 +85,97 @@
         </div>
       </div>
     </section>
+    <!-- @@@@@@@@@ Review Section @@@@@@@@@@ -->
+    <section class="review" id="reviews">
+      <div class="review__heading">
+        <div class="flex__heading">
+          <h2>Reviews</h2>
+          <img src="assets/img/coffee-cup.png" alt="" />
+        </div>
+        <p>What other people are saying!</p>
+      </div>
+      <div class="review__container container swiper">
+        <div class="swiper-wrapper">
+          <div class="review__card swiper-slide">
+            <div class="profile">
+              <img src="assets/img/profile-1.png" alt="" />
+            </div>
+            <p class="review__para">
+              "Indulge in the sublime experience of Coffee Borcelle, where every
+              sip is a journey to flavor paradise. Crafted with precision, our
+              rich blends ignite the senses and redefine coffee appreciation."
+            </p>
+            <span>@Jake_Bin</span>
+          </div>
+          <div class="review__card swiper-slide">
+            <div class="profile">
+              <img src="assets/img/profile-2.png" alt="" />
+            </div>
+            <p class="review__para">
+              "Discover a world of taste with Coffee Brocelle. Each cup is a
+              masterpiece, blending aromas and flavors that dance on your
+              palate. Join us in celebrating coffee at its finest."
+            </p>
+            <span>@Cynthia</span>
+          </div>
+          <div class="review__card swiper-slide">
+            <div class="profile">
+              <img src="assets/img/profile-3.png" alt="" />
+            </div>
+            <p class="review__para">
+              “Welcome to the heart and soul of coffee passion –Coffee Borcelle.
+              Our carefully curated beans are an ode to craftsmanship, brewing a
+              story of perfection in every cup.”
+            </p>
+            <span>@Caroline_Biff</span>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+    <!-- @@@@@@@@@ Review Section @@@@@@@@@@ -->
+    <section class="contact__section" id="contact">
+      <div class="review__heading">
+        <div class="flex__heading">
+          <h2>Contact Us</h2>
+        </div>
+        <p>Send us a message</p>
+      </div>
+      <div class="container myDiv">
+        <form action="/" class="coffee__form">
+          <input type="text" placeholder="Full Name" />
+          <input type="text" placeholder="Your email" />
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+          ></textarea>
+          <input type="submit" value="Submit" class="submit__btn" />
+        </form>
+        <div class="contact__info">
+          <a href="#home">
+            <div class="logo">
+              <img src="assets/img/my-logo.png" alt="" />
+            </div>
+          </a>
+          <div class="contact__details">
+            <div class="div-01">
+              <i class="ri-phone-fill"></i>
+              (08) 400 2000
+            </div>
+            <div class="div-01">
+              <i class="ri-mail-line"></i>
+              coffeeborcelle@gmail.com
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
+  <!-- <script src="assets/js/swiper.min.js"></script> -->
+  <script src="assets/js/swiper-bundle.min.js"></script>
 </html>
