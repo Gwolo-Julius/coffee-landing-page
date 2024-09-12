@@ -34,8 +34,12 @@
   --tran: 0.4s;
 }
 body {
+  position: relative;
   /* font-family: "Inter", sans-serif; */
   font-family: "Poppins", sans-serif;
+  min-height: 100%;
+  margin: 0;
+  padding-bottom: 4.75rem;
 }
 
 html {
@@ -354,6 +358,15 @@ textarea {
 .contact__details {
   margin-top: 2rem;
 }
+
+.footer {
+  padding: 2rem;
+  background-color: var(--secondary-clr);
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
 /* @@@@@@@@@@ Media Querries @@@@@@@@@@ */
 @media screen and (min-width: 800px) {
   .container {
@@ -428,7 +441,7 @@ textarea {
     column-gap: 5rem;
   }
 
-  .myDiv .coffee__form{
+  .myDiv .coffee__form {
     width: 60%;
   }
 }
